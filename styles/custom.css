@@ -1,13 +1,28 @@
 @font-face {
-  font-family: 'ProximaNova-Light'; }
+  font-family: 'ProximaNova-Light';
+  src: url("../fonts/Proxima-Nova-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
-  font-family: 'ProximaNova-Regular'; }
+  font-family: 'ProximaNova-Regular';
+  src: url("../fonts/Proxima-Nova-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
-  font-family: 'ProximaNova-Bold'; }
+  font-family: 'ProximaNova-Bold';
+  src: url("../fonts/Proxima-Nova-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
-  font-family: 'ProximaNova-Black'; }
+  font-family: 'ProximaNova-Black';
+  src: url("../fonts/Proxima-Nova-Black.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
-  font-family: 'ProximaNova-Extrabld'; }
+  font-family: 'ProximaNova-Extrabld';
+  src: url("../fonts/Proxima-Nova-Extrabold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
 .uk-background-primary {
   background-color: linear-gradient(30deg, #0d5cae, #038fd9); }
 
