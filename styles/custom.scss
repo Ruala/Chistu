@@ -67,10 +67,53 @@ h5 {
   font-family: $bold-font-family;
 }
 
+.tm-font-black {
+  font-family: $black-font-family;
+}
+
+.tm-font-color-primary {
+  color: $primary-color;
+}
+
+.tm-font-color-secondary {
+  color: $secondary-color;
+}
+
 .tm-font-color-default {
   color: $default-color;
 }
 
+.tm-font-color-danger {
+  color: $danger-color;
+}
+
 .tm-font-size-default {
   font-size: $default-font-size;
+}
+
+.tm-variants {
+  ol {
+    list-style-type: none;
+    counter-reset: item;
+  }
+
+  ol li {
+    font-size: $default-font-size;
+    color: $global-color;
+    margin-left: 10px;
+    position: relative;
+    text-align: left;
+    padding-left: 15px;
+    line-height: 32px;
+  }
+
+  ol li:before {
+    content: counter(item) '. ';
+    counter-increment: item;
+    font-family: $black-font-family;
+    font-size: 24px;
+    color: #00a0ff;
+    position: absolute;
+    left: -20px;
+  }
 }

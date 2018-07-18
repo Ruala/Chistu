@@ -90,10 +90,42 @@ h5 {
 .tm-font-bold {
   font-family: "ProximaNova-Bold", sans-serif; }
 
+.tm-font-black {
+  font-family: "ProximaNova-Black", sans-serif; }
+
+.tm-font-color-primary {
+  color: #007dff; }
+
+.tm-font-color-secondary {
+  color: #054979; }
+
 .tm-font-color-default {
   color: #ffffff; }
 
+.tm-font-color-danger {
+  color: #ec444a; }
+
 .tm-font-size-default {
   font-size: 18px; }
+
+.tm-variants ol {
+  list-style-type: none;
+  counter-reset: item; }
+.tm-variants ol li {
+  font-size: 18px;
+  color: #5d5d5d;
+  margin-left: 10px;
+  position: relative;
+  text-align: left;
+  padding-left: 15px;
+  line-height: 32px; }
+.tm-variants ol li:before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  font-family: "ProximaNova-Black", sans-serif;
+  font-size: 24px;
+  color: #00a0ff;
+  position: absolute;
+  left: -20px; }
 
 /*# sourceMappingURL=custom.css.map */
