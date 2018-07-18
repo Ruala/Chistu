@@ -1,0 +1,30 @@
+@import "variables";
+
+.uk-background-primary {
+  background-color: $alt-gradient;
+}
+
+.uk-background-secondary {
+  background-color: $secondary-color;
+}
+
+.uk-background-default {
+  background-color: $default-color;
+}
+
+.uk-background-muted {
+  background-color: $muted-color;
+}
+
+.uk-button {
+  border-radius: 500px;
+  font-family: $bold-font-family;
+}
+
+.uk-button-primary {
+  background-color: $primary-gradient;
+  border: none;
+  font-size: 22px;
+  color: $default-color;
+  letter-spacing: 3.5px;
+}
