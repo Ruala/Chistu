@@ -57,6 +57,12 @@ h5 {
       background-color: $danger-color;
     }
   }
+
+  &.tm-spanize-bg-transparent {
+    span {
+      background-color: rgba(0,0,0,0.5);
+    }
+  }
 }
 
 .tm-font-regular {
@@ -115,5 +121,35 @@ h5 {
     color: #00a0ff;
     position: absolute;
     left: -20px;
+  }
+}
+
+.tm-faq {
+  .uk-accordion-title {
+    background-color: $default-color;
+
+    font-family: $bold-font-family;
+    font-size: 25px;
+    color: $global-color;
+
+    padding: 15px;
+    box-shadow: 0 0 22px 0 rgba(143, 149, 147, 0.13);
+
+    &::after {
+      background-image: url("../img/faq_down.png");
+    }
+  }
+
+  .uk-open {
+    .uk-accordion-title {
+      background-color: #009cff;
+
+      font-size: 24px;
+      color: $default-color;
+
+      &::after {
+        background-image: url("../img/faq_up.png");
+      }
+    }
   }
 }

@@ -22,9 +22,21 @@
 }
 
 .uk-button-primary {
-  background-color: $primary-gradient;
+  background: $primary-gradient;
   border: none;
   font-size: 22px;
   color: $default-color;
   letter-spacing: 3.5px;
+
+  &.tm-button-big {
+    height: 93px;
+    line-height: 93px;
+    box-shadow: 0 16px 32.3px 0.7px rgba(0, 142, 255, 0.35);
+  }
+
+  &.tm-button-small {
+    height: 65px;
+    line-height: 65px;
+    box-shadow: 0 11px 16.7px 0.3px rgba(0, 142, 255, 0.35);
+  }
 }

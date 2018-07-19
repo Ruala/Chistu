@@ -40,11 +40,19 @@
   font-family: "ProximaNova-Bold", sans-serif; }
 
 .uk-button-primary {
-  background-color: linear-gradient(#00a7ff, #007dff);
+  background: linear-gradient(#00a7ff, #007dff);
   border: none;
   font-size: 22px;
   color: #ffffff;
   letter-spacing: 3.5px; }
+  .uk-button-primary.tm-button-big {
+    height: 93px;
+    line-height: 93px;
+    box-shadow: 0 16px 32.3px 0.7px rgba(0, 142, 255, 0.35); }
+  .uk-button-primary.tm-button-small {
+    height: 65px;
+    line-height: 65px;
+    box-shadow: 0 11px 16.7px 0.3px rgba(0, 142, 255, 0.35); }
 
 body {
   font-family: "ProximaNova-Light", sans-serif;
@@ -83,6 +91,8 @@ h5 {
   background-color: #054979; }
 .tm-spanize.tm-spanize-bg-danger span {
   background-color: #ec444a; }
+.tm-spanize.tm-spanize-bg-transparent span {
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .tm-font-regular {
   font-family: "ProximaNova-Regular", sans-serif; }
@@ -127,5 +137,21 @@ h5 {
   color: #00a0ff;
   position: absolute;
   left: -20px; }
+
+.tm-faq .uk-accordion-title {
+  background-color: #ffffff;
+  font-family: "ProximaNova-Bold", sans-serif;
+  font-size: 25px;
+  color: #5d5d5d;
+  padding: 15px;
+  box-shadow: 0 0 22px 0 rgba(143, 149, 147, 0.13); }
+  .tm-faq .uk-accordion-title::after {
+    background-image: url("../img/faq_down.png"); }
+.tm-faq .uk-open .uk-accordion-title {
+  background-color: #009cff;
+  font-size: 24px;
+  color: #ffffff; }
+  .tm-faq .uk-open .uk-accordion-title::after {
+    background-image: url("../img/faq_up.png"); }
 
 /*# sourceMappingURL=custom.css.map */
