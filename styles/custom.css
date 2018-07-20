@@ -61,9 +61,11 @@ body {
 
 h1, h2, h3 {
   font-family: "ProximaNova-Black", sans-serif;
-  text-transform: uppercase;
   color: #ffffff;
   margin: 0; }
+
+h2, h3 {
+  text-transform: uppercase; }
 
 h1 {
   font-size: 76.5px; }
@@ -99,6 +101,9 @@ h5 {
 
 .tm-font-bold {
   font-family: "ProximaNova-Bold", sans-serif; }
+
+.tm-font-extrabold {
+  font-family: "ProximaNova-Extrabld", sans-serif; }
 
 .tm-font-black {
   font-family: "ProximaNova-Black", sans-serif; }
@@ -153,5 +158,8 @@ h5 {
   color: #ffffff; }
   .tm-faq .uk-open .uk-accordion-title::after {
     background-image: url("../img/faq_up.png"); }
+
+.tm-card-shadow {
+  box-shadow: 0 7px 23.5px 0.5px rgba(205, 205, 223, 0.28); }
 
 /*# sourceMappingURL=custom.css.map */

@@ -10,9 +10,12 @@ body {
 
 h1,h2,h3 {
   font-family: $black-font-family;
-  text-transform: uppercase;
   color: $default-color;
   margin: 0;
+}
+
+h2,h3 {
+  text-transform: uppercase;
 }
 
 h1 {
@@ -71,6 +74,10 @@ h5 {
 
 .tm-font-bold {
   font-family: $bold-font-family;
+}
+
+.tm-font-extrabold {
+  font-family: $extrabold-font-family;
 }
 
 .tm-font-black {
@@ -152,4 +159,8 @@ h5 {
       }
     }
   }
+}
+
+.tm-card-shadow {
+  box-shadow: 0 7px 23.5px 0.5px rgba(205, 205, 223, 0.28);
 }
