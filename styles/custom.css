@@ -139,6 +139,12 @@ header {
 .tm-bg-gradient-secondary {
   background: linear-gradient(60deg, #0d5cae, #038fd9); }
 
+.tm-bg-gradient-guarantee {
+  background-image: linear-gradient(to top, #007dff, #00a7ff); }
+
+.tm-box-shadow {
+  box-shadow: 0 0 22px 0 rgba(143, 149, 147, 0.13); }
+
 .tm-spanize span {
   display: inline-block;
   padding: 15px;
