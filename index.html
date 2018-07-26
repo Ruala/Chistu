@@ -630,72 +630,228 @@
                     </div>
                 </div>
             </div>
-            <div class="uk-section uk-background-cover" style="background-image: url(img/feedback_bg.jpg);">
-                <div class="uk-container">
-                    <div class="uk-flex uk-flex-between uk-flex-middle">
-                        <h2 class="tm-spanize tm-spanize-bg-transparent uk-flex uk-flex-wrap uk-margin-bottom"
-                            style="font-size: 54px;"><span>Отзывы</span><span>наших</span><span>клиентов</span></h2>
-                        <div class="uk-width-1-6 uk-flex uk-flex-middle">
-                            <div class="uk-width-auto uk-padding-small">
-                                <span class="tm-font-black tm-font-color-primary" style="font-size: 54px;">2</span><span
-                                    class="tm-font-regular" style="font-size: 28px;color: #bbbab9;">/8</span>
+
+
+            <div class="uk-section uk-section-large uk-cover-container">
+                <img src="images/feedback_bg.jpg" alt="" uk-cover>
+                <div class="uk-container uk-position-relative">
+
+                    <div uk-slider="sets: true">
+
+                        <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-medium-bottom" uk-margin="margin: uk-margin-top">
+                            <div>
+                                <h2 class="tm-h2-small tm-spanize tm-spanize-bg-transparent">
+                                    <span>Отзывы</span><span>наших</span><span>клиентов</span>
+                                </h2>
                             </div>
-                            <div class="uk-width-auto uk-background-muted uk-padding-small">
-                                <
-                            </div>
-                            <div class="uk-width-auto uk-background-primary uk-padding-small">
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uk-grid-small uk-child-width-1-2" uk-grid>
-                        <div>
-                            <div class="uk-panel uk-background-default uk-padding-small">
-                                <div class="uk-grid-small uk-child-width-expand uk-flex-middle" uk-grid>
-                                    <div class="uk-width-auto">
-                                        <img class="uk-border-circle" src="img/feedback_woman_big.png" alt="">
-                                    </div>
+
+                            <div>
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
                                     <div>
-                                        <h5>Татьяна Петрова</h5>
-                                        <p>Комбинированный р-4</p>
-                                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                                            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала
-                                            XVI века. В то время некий безымянный печатник создал большую коллекцию
-                                            размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
-                                            Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но
-                                            и перешагнул в электронный дизайн. Его популяризации в новое время послужили
-                                            публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более
-                                            недавнее время, программы электронной вёрстки типа Aldus PageMaker, в
-                                            шаблонах которых используется Lorem Ipsum.</p>
+                                        <ul class="uk-slider-nav uk-dotnav uk-flex-center"></ul>
+                                    </div>
+
+                                    <div>
+                                        <div class="uk-flex">
+                                            <a class="" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                            <a class="" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="uk-panel uk-background-default uk-padding-small">
-                                <div class="uk-grid-small uk-child-width-expand uk-flex-middle" uk-grid>
-                                    <div class="uk-width-auto">
-                                        <img class="uk-border-circle" src="img/feedback_woman_small.png" alt="">
-                                    </div>
-                                    <div>
-                                        <h5>Ирина Шейс</h5>
-                                        <p>Советский р-4</p>
-                                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                                            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала
-                                            XVI века. В то время некий безымянный печатник создал большую коллекцию
-                                            размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
-                                            Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но
-                                            и перешагнул в электронный дизайн. Его популяризации в новое время послужили
-                                            публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более
-                                            недавнее время, программы электронной вёрстки типа Aldus PageMaker, в
-                                            шаблонах которых используется Lorem Ipsum.</p>
+
+                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid-small" uk-grid>
+                            <li>
+                                <div class="tm-padding-small uk-panel uk-background-default">
+                                    <div class="uk-grid-small uk-child-width-expand uk-flex-middle" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <img class="uk-border-circle" src="img/feedback_woman_big.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h5 class="uk-margin-remove">Татьяна Петрова</h5>
+                                            <p>Комбинированный р-4</p>
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала
+                                                XVI века. В то время некий безымянный печатник создал большую коллекцию
+                                                размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                                                Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но
+                                                и перешагнул в электронный дизайн. Его популяризации в новое время послужили
+                                                публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более
+                                                недавнее время, программы электронной вёрстки типа Aldus PageMaker, в
+                                                шаблонах которых используется Lorem Ipsum.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+
+                            <li>
+                                <div class="tm-padding-small uk-panel uk-background-default">
+                                    <div class="uk-grid-small uk-child-width-expand uk-flex-middle" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <img class="uk-border-circle" src="img/feedback_woman_small.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h5 class="uk-margin-remove">Ирина Шейс</h5>
+                                            <p>Советский р-4</p>
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала
+                                                XVI века. В то время некий безымянный печатник создал большую коллекцию
+                                                размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                                                Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но
+                                                и перешагнул в электронный дизайн. Его популяризации в новое время послужили
+                                                публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более
+                                                недавнее время, программы электронной вёрстки типа Aldus PageMaker, в
+                                                шаблонах которых используется Lorem Ipsum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="tm-padding-small uk-panel uk-background-default">
+                                    <div class="uk-grid-small uk-child-width-expand uk-flex-middle" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <img class="uk-border-circle" src="img/feedback_woman_big.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h5 class="uk-margin-remove">Татьяна Петрова</h5>
+                                            <p>Комбинированный р-4</p>
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала
+                                                XVI века. В то время некий безымянный печатник создал большую коллекцию
+                                                размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                                                Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но
+                                                и перешагнул в электронный дизайн. Его популяризации в новое время послужили
+                                                публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более
+                                                недавнее время, программы электронной вёрстки типа Aldus PageMaker, в
+                                                шаблонах которых используется Lorem Ipsum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="tm-padding-small uk-panel uk-background-default">
+                                    <div class="uk-grid-small uk-child-width-expand uk-flex-middle" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <img class="uk-border-circle" src="img/feedback_woman_small.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h5 class="uk-margin-remove">Ирина Шейс</h5>
+                                            <p>Советский р-4</p>
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала
+                                                XVI века. В то время некий безымянный печатник создал большую коллекцию
+                                                размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                                                Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но
+                                                и перешагнул в электронный дизайн. Его популяризации в новое время послужили
+                                                публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более
+                                                недавнее время, программы электронной вёрстки типа Aldus PageMaker, в
+                                                шаблонах которых используется Lorem Ipsum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="tm-padding-small uk-panel uk-background-default">
+                                    <div class="uk-grid-small uk-child-width-expand uk-flex-middle" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <img class="uk-border-circle" src="img/feedback_woman_big.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h5 class="uk-margin-remove">Татьяна Петрова</h5>
+                                            <p>Комбинированный р-4</p>
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала
+                                                XVI века. В то время некий безымянный печатник создал большую коллекцию
+                                                размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                                                Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но
+                                                и перешагнул в электронный дизайн. Его популяризации в новое время послужили
+                                                публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более
+                                                недавнее время, программы электронной вёрстки типа Aldus PageMaker, в
+                                                шаблонах которых используется Lorem Ipsum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="tm-padding-small uk-panel uk-background-default">
+                                    <div class="uk-grid-small uk-child-width-expand uk-flex-middle" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <img class="uk-border-circle" src="img/feedback_woman_small.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h5 class="uk-margin-remove">Ирина Шейс</h5>
+                                            <p>Советский р-4</p>
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала
+                                                XVI века. В то время некий безымянный печатник создал большую коллекцию
+                                                размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                                                Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но
+                                                и перешагнул в электронный дизайн. Его популяризации в новое время послужили
+                                                публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более
+                                                недавнее время, программы электронной вёрстки типа Aldus PageMaker, в
+                                                шаблонах которых используется Lorem Ipsum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="tm-padding-small uk-panel uk-background-default">
+                                    <div class="uk-grid-small uk-child-width-expand uk-flex-middle" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <img class="uk-border-circle" src="img/feedback_woman_big.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h5 class="uk-margin-remove">Татьяна Петрова</h5>
+                                            <p>Комбинированный р-4</p>
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала
+                                                XVI века. В то время некий безымянный печатник создал большую коллекцию
+                                                размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                                                Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но
+                                                и перешагнул в электронный дизайн. Его популяризации в новое время послужили
+                                                публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более
+                                                недавнее время, программы электронной вёрстки типа Aldus PageMaker, в
+                                                шаблонах которых используется Lorem Ipsum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="tm-padding-small uk-panel uk-background-default">
+                                    <div class="uk-grid-small uk-child-width-expand uk-flex-middle" uk-grid>
+                                        <div class="uk-width-auto">
+                                            <img class="uk-border-circle" src="img/feedback_woman_small.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h5 class="uk-margin-remove">Ирина Шейс</h5>
+                                            <p>Советский р-4</p>
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала
+                                                XVI века. В то время некий безымянный печатник создал большую коллекцию
+                                                размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+                                                Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но
+                                                и перешагнул в электронный дизайн. Его популяризации в новое время послужили
+                                                публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более
+                                                недавнее время, программы электронной вёрстки типа Aldus PageMaker, в
+                                                шаблонах которых используется Lorem Ipsum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+
+
+
             <div class="uk-section uk-background-cover" style="background-image: url(img/faq_bg.jpg);">
                 <div class="uk-container">
                     <div class="uk-grid-small uk-child-width-expand uk-flex-between" uk-grid>

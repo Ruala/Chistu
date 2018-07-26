@@ -1,7 +1,7 @@
 @import "variables";
 
 .uk-background-primary {
-  background-color: $alt-gradient;
+  background: $alt-gradient;
 }
 
 .uk-background-secondary {
@@ -74,4 +74,90 @@
 .uk-text-large {
   line-height: 1.2;
   font-size: 27px;
+}
+
+.uk-slidenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85px;
+  height: 82px;
+  padding: 0;
+  color: #bbbab9;
+  background-color: #f7f9fa;
+}
+
+.uk-slidenav-next {
+  color: #fff;
+  background: linear-gradient(90deg, #007dff, #00a7ff);
+}
+
+.uk-dotnav {
+  counter-reset: item;
+
+  > * {
+    width: 0;
+    padding-left: 0;
+
+    > * {
+      display: flex;
+      align-items: flex-end;
+      width: auto;
+      height: 40px;
+      border-radius: 0;
+      text-indent: 0;
+      border: none;
+      font-family: $regular-font-family;
+      font-size: 28px;
+      color: #bbbab9;
+
+      &::before {
+        content: counter(item) '';
+        counter-increment: item 2;
+        line-height: 28px;
+      }
+    }
+
+    &:nth-last-child(2) {
+      position: relative;
+      width: auto;
+      padding-left: 12px;
+
+      &::before {
+        content: '/';
+        position: absolute;
+        bottom: 0;
+        left: 2px;
+        font-family: $regular-font-family;
+        font-size: 28px;
+        color: #bbbab9;
+        line-height: 28px;
+      }
+    }
+
+    > :focus, > :hover {
+      color: #bbbab9;
+      text-decoration: none;
+      background-color: transparent;
+    }
+  }
+
+  > .uk-active {
+    width: auto;
+
+    &::before {
+      display: none;
+    }
+
+    > * {
+    font-family: $black-font-family;
+    font-size: 54px;
+    color: #00a0ff;
+    background-color: transparent;
+
+      &::before {
+        line-height: 40px;
+      }
+  }
+  }
 }
