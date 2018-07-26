@@ -79,6 +79,19 @@ header {
   font-size: 23px;
 }
 
+.tm-title {
+  font-size: 42px;
+}
+
+.tm-subtitle {
+  font-size: 25px;
+  letter-spacing: 8px;
+}
+
+.tm-font-medium  {
+  font-size: 24px;
+}
+
 .tm-bg-danger {
   background-color: $danger-color;
 }
@@ -261,6 +274,10 @@ header {
 
 .tm-card-shadow {
   box-shadow: 0 7px 23.5px 0.5px rgba(205, 205, 223, 0.28);
+}
+
+.tm-img-shadow {
+  box-shadow: 0 7px 63.7px 1.3px rgba(224, 228, 231, 0.57);
 }
 
 .tm-padding-small {
