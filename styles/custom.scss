@@ -20,11 +20,11 @@ h2, h3 {
 }
 
 h1, .uk-h1 {
-  font-size: 76.5px;
+  font-size: 76px;
 }
 
 h2 {
-  font-size: 60.5px;
+  font-size: 60px;
 }
 
 h3 {
@@ -38,11 +38,11 @@ h4,h5 {
 }
 
 h4 {
-  font-size: 40.5px;
+  font-size: 40px;
 }
 
 h5 {
-  font-size: 29.5px;
+  font-size: 30px;
 }
 
 header {
@@ -51,6 +51,10 @@ header {
 
 .tm-h2 {
   font-size: 65px;
+}
+
+.tm-h2-small {
+  font-size: 54px;
 }
 
 .tm-h3 {
@@ -220,4 +224,41 @@ header {
   padding: 20px;
 }
 
+.tm-scheme {
+    list-style-type: none;
+    counter-reset: item;
 
+  .tm-item {
+    padding-left: 80px;
+    font-family: $regular-font-family;
+    font-size: 23px;
+    color: #454545;
+    position: relative;
+
+    &:before {
+      content: counter(item) '';
+      counter-increment: item;
+      font-family: $bold-font-family;
+      font-size: 110px;
+      color: #d6d8d9;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.tm-dotted-line {
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc(100% + 5px);
+    top: calc(50% - (4px / 2));
+    width: 2000px;
+    border-bottom: 4px dotted $primary-color;
+  }
+}
