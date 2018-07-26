@@ -3,7 +3,6 @@
 @import "uk-reset";
 
 body {
-  line-height: 1.2;
   font-family: $global-font-family;
   font-size: $global-font-size;
   color: $global-color;
@@ -54,12 +53,24 @@ header {
   font-size: 65px;
 }
 
+.tm-h3 {
+  font-size: 39px;
+}
+
+.tm-h5 {
+  font-size: 32px;
+}
+
 .tm-bg-danger {
   background-color: $danger-color;
 }
 
 .tm-bg-gradient-alt {
   background: $alt-gradient;
+}
+
+.tm-bg-gradient-secondary {
+  background: $secondary-gradient;
 }
 
 .tm-spanize {
@@ -78,6 +89,14 @@ header {
 
     .tm-bg-danger {
       background-color: $danger-color;
+    }
+
+    .uk-background-default {
+      background-color: $default-color;
+    }
+
+    .tm-text-primary {
+      color: #0ba9ff;
     }
   }
 
@@ -130,6 +149,10 @@ header {
 
 .tm-font-size-default {
   font-size: $default-font-size;
+}
+
+.tm-text-large {
+  font-size: 31px;
 }
 
 .tm-variants {
@@ -193,9 +216,8 @@ header {
   box-shadow: 0 7px 23.5px 0.5px rgba(205, 205, 223, 0.28);
 }
 
-.tm-pageheader-image {
-
+.tm-padding-small {
+  padding: 20px;
 }
-
 
 

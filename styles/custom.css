@@ -82,7 +82,6 @@
   font-size: 27px; }
 
 body {
-  line-height: 1.2;
   font-family: "ProximaNova-Light", sans-serif;
   font-size: 17px;
   color: #5d5d5d; }
@@ -122,11 +121,20 @@ header {
 .tm-h2 {
   font-size: 65px; }
 
+.tm-h3 {
+  font-size: 39px; }
+
+.tm-h5 {
+  font-size: 32px; }
+
 .tm-bg-danger {
   background-color: #ec444a; }
 
 .tm-bg-gradient-alt {
   background: linear-gradient(30deg, #0d5cae, #038fd9); }
+
+.tm-bg-gradient-secondary {
+  background: linear-gradient(60deg, #0d5cae, #038fd9); }
 
 .tm-spanize span {
   display: inline-block;
@@ -136,6 +144,10 @@ header {
   background-color: #054979; }
 .tm-spanize.tm-spanize-bg-secondary .tm-bg-danger {
   background-color: #ec444a; }
+.tm-spanize.tm-spanize-bg-secondary .uk-background-default {
+  background-color: #ffffff; }
+.tm-spanize.tm-spanize-bg-secondary .tm-text-primary {
+  color: #0ba9ff; }
 .tm-spanize.tm-spanize-bg-danger span {
   background-color: #ec444a; }
 .tm-spanize.tm-spanize-bg-transparent span {
@@ -167,6 +179,9 @@ header {
 
 .tm-font-size-default {
   font-size: 18px; }
+
+.tm-text-large {
+  font-size: 31px; }
 
 .tm-variants ol {
   list-style-type: none;
@@ -206,5 +221,8 @@ header {
 
 .tm-card-shadow {
   box-shadow: 0 7px 23.5px 0.5px rgba(205, 205, 223, 0.28); }
+
+.tm-padding-small {
+  padding: 20px; }
 
 /*# sourceMappingURL=custom.css.map */
