@@ -9,6 +9,7 @@ body {
 }
 
 h1, h2, h3, .uk-h1 {
+  line-height: 1;
   font-family: $black-font-family;
   color: $default-color;
   margin: 0;
@@ -19,7 +20,6 @@ h2, h3 {
 }
 
 h1, .uk-h1 {
-  line-height: 1;
   font-size: 76.5px;
 }
 
@@ -27,7 +27,12 @@ h2 {
   font-size: 60.5px;
 }
 
+h3 {
+  font-size: 41px;
+}
+
 h4,h5 {
+  line-height: 1;
   font-family: $regular-font-family;
   color: $global-color;
 }
@@ -48,7 +53,12 @@ header {
   background-color: $danger-color;
 }
 
+.tm-bg-gradient-alt {
+  background: $alt-gradient;
+}
+
 .tm-spanize {
+
   span {
     display: inline-block;
     padding:15px;
@@ -56,18 +66,25 @@ header {
   }
 
   &.tm-spanize-bg-secondary {
+
     span {
       background-color: $secondary-color;
+    }
+
+    .tm-bg-danger {
+      background-color: $danger-color;
     }
   }
 
   &.tm-spanize-bg-danger {
+
     span {
       background-color: $danger-color;
     }
   }
 
   &.tm-spanize-bg-transparent {
+
     span {
       background-color: rgba(0,0,0,0.5);
     }
