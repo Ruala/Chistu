@@ -168,6 +168,9 @@ header {
 .tm-h5 {
   font-size: 32px; }
 
+.tm-h5-small {
+  font-size: 23px; }
+
 .tm-bg-danger {
   background-color: #ec444a; }
 
@@ -230,8 +233,20 @@ header {
 .tm-font-size-default {
   font-size: 18px; }
 
+.tm-text-average {
+  font-size: 23px; }
+
+.tm-text-big {
+  font-size: 27px; }
+
 .tm-text-large {
   font-size: 31px; }
+
+.tm-text-huge {
+  font-size: 33px; }
+
+.tm-text-enormous {
+  font-size: 38px; }
 
 .tm-variants ol {
   list-style-type: none;
