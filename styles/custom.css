@@ -127,6 +127,14 @@ header {
 .tm-h3 {
   font-size: 39px; }
 
+.tm-h3-primary {
+  padding: 20px 0; }
+
+.tm-h3-secondary {
+  display: inline-block;
+  padding: 15px;
+  color: #096fbe; }
+
 .tm-h5 {
   font-size: 32px; }
 
@@ -274,5 +282,13 @@ header {
     top: calc(50% - (4px / 2));
     width: 2000px;
     border-bottom: 4px dotted #007dff; }
+
+.tm-overlay-result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: rgba(5, 73, 121, 0.22); }
 
 /*# sourceMappingURL=custom.css.map */
