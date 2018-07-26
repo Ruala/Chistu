@@ -40,3 +40,24 @@
     box-shadow: 0 11px 16.7px 0.3px rgba(0, 142, 255, 0.35);
   }
 }
+
+.uk-navbar-nav > li {
+  padding: 0 20px;
+
+  > a {
+    height: 43px;
+    line-height: 43px;
+    padding: 0 25px;
+    font-family: $bold-font-family;
+    font-size: 18px;
+    color: $global-color;
+    border: 1px solid transparent;
+    border-radius: 500px;
+    transition-property: all;
+  }
+
+  &:hover > a, > a.uk-open, > a:focus {
+    color: $primary-color;
+    border-color: $primary-color;
+  }
+}
