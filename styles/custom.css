@@ -231,6 +231,8 @@ header {
 .tm-scheme {
   list-style-type: none;
   counter-reset: item; }
+  .tm-scheme > div:first-of-type {
+    padding-bottom: 72px; }
   .tm-scheme .tm-item {
     padding-left: 80px;
     font-family: "ProximaNova-Regular", sans-serif;
@@ -247,6 +249,14 @@ header {
       top: 50%;
       left: 0;
       transform: translateY(-50%); }
+  .tm-scheme .tm-item-jump::after {
+    content: "";
+    position: absolute;
+    left: calc(100% + 3px);
+    top: calc(50% - 2px);
+    width: 70px;
+    height: 193px;
+    background: url("../images/dotted-arc.png") no-repeat; }
 
 .tm-dotted-line {
   display: inline-block;
@@ -254,7 +264,7 @@ header {
   .tm-dotted-line::after {
     content: "";
     position: absolute;
-    left: calc(100% + 5px);
+    left: calc(100% + 10px);
     top: calc(50% - (4px / 2));
     width: 2000px;
     border-bottom: 4px dotted #007dff; }

@@ -228,6 +228,10 @@ header {
     list-style-type: none;
     counter-reset: item;
 
+  > div:first-of-type {
+    padding-bottom: 72px;
+  }
+
   .tm-item {
     padding-left: 80px;
     font-family: $regular-font-family;
@@ -247,6 +251,19 @@ header {
       transform: translateY(-50%);
     }
   }
+
+  .tm-item-jump {
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: calc(100% + 3px);
+      top: calc(50% - 2px);
+      width: 70px;
+      height: 193px;
+      background: url("../images/dotted-arc.png") no-repeat;
+    }
+  }
 }
 
 .tm-dotted-line {
@@ -256,7 +273,7 @@ header {
   &::after {
     content: "";
     position: absolute;
-    left: calc(100% + 5px);
+    left: calc(100% + 10px);
     top: calc(50% - (4px / 2));
     width: 2000px;
     border-bottom: 4px dotted $primary-color;
