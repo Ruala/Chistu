@@ -42,7 +42,7 @@
 }
 
 .uk-navbar-nav > li {
-  padding: 0 20px;
+  padding: 0 15px;
 
   > a {
     height: 43px;
@@ -60,4 +60,8 @@
     color: $primary-color;
     border-color: $primary-color;
   }
+}
+
+.uk-container-large {
+  max-width: 1400px;
 }

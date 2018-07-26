@@ -55,7 +55,7 @@
     box-shadow: 0 11px 16.7px 0.3px rgba(0, 142, 255, 0.35); }
 
 .uk-navbar-nav > li {
-  padding: 0 20px; }
+  padding: 0 15px; }
   .uk-navbar-nav > li > a {
     height: 43px;
     line-height: 43px;
@@ -69,6 +69,9 @@
   .uk-navbar-nav > li:hover > a, .uk-navbar-nav > li > a.uk-open, .uk-navbar-nav > li > a:focus {
     color: #007dff;
     border-color: #007dff; }
+
+.uk-container-large {
+  max-width: 1400px; }
 
 body {
   font-family: "ProximaNova-Light", sans-serif;
