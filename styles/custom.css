@@ -77,7 +77,12 @@
   padding-left: 15px;
   padding-right: 15px; }
 
+.uk-text-large {
+  line-height: 1.2;
+  font-size: 27px; }
+
 body {
+  line-height: 1.2;
   font-family: "ProximaNova-Light", sans-serif;
   font-size: 17px;
   color: #5d5d5d; }
@@ -101,7 +106,7 @@ h3 {
   font-size: 41px; }
 
 h4, h5 {
-  line-height: 1;
+  line-height: 1.2;
   font-family: "ProximaNova-Regular", sans-serif;
   color: #5d5d5d; }
 
@@ -113,6 +118,9 @@ h5 {
 
 header {
   font-size: 18px; }
+
+.tm-h2 {
+  font-size: 65px; }
 
 .tm-bg-danger {
   background-color: #ec444a; }
