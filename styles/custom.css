@@ -23,6 +23,36 @@
   src: url("../fonts/Proxima-Nova-Extrabold.otf") format("opentype");
   font-weight: normal;
   font-style: normal; }
+._3_ {
+  font-size: 11px;
+  font-family: "ProximaNova";
+  color: #e2e4e4;
+  text-transform: uppercase;
+  line-height: 2.773;
+  text-align: left;
+  -moz-transform: matrix(13.1196668234, 0, 0, 13.1196668234, 0, 0);
+  -webkit-transform: matrix(13.1196668234, 0, 0, 13.1196668234, 0, 0);
+  -ms-transform: matrix(13.1196668234, 0, 0, 13.1196668234, 0, 0);
+  position: absolute;
+  left: 556.902px;
+  top: 7797.606px;
+  z-index: 233; }
+
+._3_ {
+  font-size: 11px;
+  font-family: "ProximaNova";
+  color: #e2e4e4;
+  text-transform: uppercase;
+  line-height: 2.773;
+  text-align: left;
+  -moz-transform: matrix(13.1196668234, 0, 0, 13.1196668234, 0, 0);
+  -webkit-transform: matrix(13.1196668234, 0, 0, 13.1196668234, 0, 0);
+  -ms-transform: matrix(13.1196668234, 0, 0, 13.1196668234, 0, 0);
+  position: absolute;
+  left: 556.902px;
+  top: 7797.606px;
+  z-index: 233; }
+
 .uk-background-primary {
   background-color: linear-gradient(30deg, #0d5cae, #038fd9); }
 
@@ -194,6 +224,9 @@ header {
 .tm-font-color-danger {
   color: #ec444a; }
 
+.tm-text-muted {
+  color: #a8a8a8; }
+
 .tm-font-size-default {
   font-size: 18px; }
 
@@ -204,13 +237,13 @@ header {
   list-style-type: none;
   counter-reset: item; }
 .tm-variants ol li {
+  margin-bottom: 10px;
   font-size: 18px;
   color: #5d5d5d;
   margin-left: 10px;
   position: relative;
   text-align: left;
-  padding-left: 15px;
-  line-height: 32px; }
+  padding-left: 15px; }
 .tm-variants ol li:before {
   content: counter(item) ". ";
   counter-increment: item;
@@ -218,7 +251,8 @@ header {
   font-size: 24px;
   color: #00a0ff;
   position: absolute;
-  left: -20px; }
+  left: -20px;
+  line-height: 27px; }
 
 .tm-faq .uk-accordion-title {
   background-color: #ffffff;
@@ -290,5 +324,17 @@ header {
   bottom: 0;
   width: 50%;
   background-color: rgba(5, 73, 121, 0.22); }
+
+.tm-margin-xlarge-top {
+  margin-top: 250px; }
+
+.tm-text-bg {
+  position: absolute;
+  z-index: -1;
+  top: -40px;
+  width: 100%;
+  line-height: 146px;
+  font-size: 146px;
+  color: #e2e4e4; }
 
 /*# sourceMappingURL=custom.css.map */
