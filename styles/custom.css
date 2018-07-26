@@ -138,6 +138,9 @@ header {
 .tm-h5 {
   font-size: 32px; }
 
+.tm-h5-small {
+  font-size: 23px; }
+
 .tm-bg-danger {
   background-color: #ec444a; }
 
