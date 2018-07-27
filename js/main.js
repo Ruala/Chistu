@@ -126,6 +126,54 @@ $(document).ready(function () {
 
     })();
 
+    //Up-Down Button
+
+    (function () {
+        const $updownElem = $('#btnUpDown');
+        const optionToTopBtn = 1;
+        const showToTopBtnOn = document.documentElement.clientHeight * optionToTopBtn;
+        let pageYLabel = 0;
+
+        $(window).scroll(function () {
+
+            if($updownElem.hasClass("upBtn")) {
+                if ($(window).scrollTop() < showToTopBtnOn) {
+                    $updownElem.removeClass("upBtn");
+                    $updownElem.fadeOut();
+                }
+            }
+            else if($updownElem.hasClass("downBtn")) {
+                if ($(window).scrollTop() > showToTopBtnOn) {
+                    $updownElem.removeClass("downBtn").addClass("upBtn");
+                }
+            }
+            else {
+                if ($(window).scrollTop() > showToTopBtnOn && !($updownElem.hasClass("downBtn"))) {
+                    $updownElem.fadeIn();
+                    $updownElem.addClass("upBtn");
+                }
+            }
+
+        });
+
+        $updownElem.click(function () {
+
+            if($updownElem.hasClass("upBtn")) {
+                pageYLabel = $(window).scrollTop();
+                $('body,html').animate({scrollTop: 0}, 800, function() {
+                    $updownElem.removeClass("upBtn").addClass("downBtn");
+                    $updownElem.fadeIn();
+                });
+            }
+            else if($updownElem.hasClass("downBtn")) {
+                $('body,html').animate({scrollTop: pageYLabel}, 800, function() {
+                    $updownElem.removeClass("downBtn").addClass("upBtn");
+                });
+            }
+        });
+
+    })();
+
     /*carousel init*/
     (function () {
         const $caruosel = $('.carousel');

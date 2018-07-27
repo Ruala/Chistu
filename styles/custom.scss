@@ -417,6 +417,24 @@ footer {
   min-height: 400px;
 }
 
+#btnUpDown {
+  height: 9px;
+  width: 14px;
+  color: green;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+#btnUpDown.upBtn::before {
+  content: '+';
+}
+
+#btnUpDown.downBtn::before {
+  content: '-';
+}
+
 
 @media (max-width: 959px) {
 
