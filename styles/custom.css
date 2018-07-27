@@ -417,4 +417,7 @@ header {
     content: counter(step) "";
     counter-increment: step 2; }
 
+.tm-mh-400 {
+  min-height: 400px; }
+
 /*# sourceMappingURL=custom.css.map */
