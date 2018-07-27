@@ -229,6 +229,9 @@
 .uk-iconnav > * {
   padding-left: 20px; }
 
+.uk-section {
+  overflow: hidden; }
+
 body {
   font-family: "ProximaNova-Light", sans-serif;
   font-size: 17px;
