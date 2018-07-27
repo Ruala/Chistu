@@ -50,9 +50,9 @@
 .carousel .carousel-item {
   visibility: hidden;
   width: 770px;
-  height: 510px;
+  max-width: 100%;
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0
 }
 

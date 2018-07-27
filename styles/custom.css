@@ -68,9 +68,9 @@
 .carousel .carousel-item {
   visibility: hidden;
   width: 770px;
-  height: 510px;
+  max-width: 100%;
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0; }
 
 .carousel .carousel-item > img {
@@ -585,12 +585,6 @@ footer {
   h3 {
     font-size: 31px; }
 
-  h4 {
-    font-size: 30px; }
-
-  h5 {
-    font-size: 20px; }
-
   .tm-h2 {
     font-size: 55px; }
 
@@ -626,8 +620,41 @@ footer {
         display: none; }
     .tm-dotnav-step-2 > * > *::before {
       content: counter(step) "";
-      counter-increment: step; } }
+      counter-increment: step; }
+
+  .uk-logo {
+    max-width: 200px; }
+
+  .tm-margin-xlarge-top {
+    margin-top: 50px; } }
 @media (max-width: 639px) {
+  h1, .uk-h1 {
+    font-size: 46px; }
+
+  h2 {
+    font-size: 20px; }
+
+  h3 {
+    font-size: 18px; }
+
+  h4 {
+    font-size: 30px; }
+
+  h5 {
+    font-size: 22px; }
+
+  .tm-h2 {
+    font-size: 28px; }
+
+  .tm-h2-small {
+    font-size: 24px; }
+
+  .tm-h3 {
+    font-size: 20px; }
+
+  .uk-text-large {
+    font-size: 18px; }
+
   .tm-text-average {
     font-size: 13px; }
 
@@ -638,6 +665,31 @@ footer {
     font-size: 23px; }
 
   .tm-text-enormous {
-    font-size: 28px; } }
+    font-size: 28px; }
+
+  .tm-pageheader .uk-button, .tm-order .uk-button {
+    padding: 0 20px;
+    font-size: 14px; }
+
+  .tm-scheme .tm-item {
+    padding-left: 50px; }
+    .tm-scheme .tm-item:before {
+      font-size: 60px; }
+
+  .tm-text-bg {
+    line-height: 126px;
+    font-size: 100px; }
+
+  .carousel {
+    height: 600px; }
+
+  .tm-title {
+    font-size: 26px; }
+
+  .tm-subtitle {
+    font-size: 18px; }
+
+  .tm-button {
+    font-size: 18px; } }
 
 /*# sourceMappingURL=custom.css.map */

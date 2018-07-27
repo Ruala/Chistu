@@ -450,14 +450,6 @@ footer {
     font-size: 31px;
   }
 
-  h4 {
-    font-size: 30px;
-  }
-
-  h5 {
-    font-size: 20px;
-  }
-
   .tm-h2 {
     font-size: 55px;
   }
@@ -490,14 +482,6 @@ footer {
     font-size: 20px;
   }
 
-  //.tm-text-big {
-  //  font-size: 17px;
-  //}
-  //
-  //.tm-text-huge {
-  //  font-size: 23px;
-  //}
-
   .tm-scheme > div:first-of-type {
      padding-bottom: 0;
   }
@@ -523,9 +507,54 @@ footer {
       }
     }
   }
+
+  .uk-logo {
+    max-width: 200px;
+  }
+
+  .tm-margin-xlarge-top {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 639px) {
+
+  h1, .uk-h1 {
+    font-size: 46px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+
+  h5 {
+    font-size: 22px;
+  }
+
+  .tm-h2 {
+    font-size: 28px;
+  }
+
+  .tm-h2-small {
+    font-size: 24px;
+  }
+
+  .tm-h3 {
+    font-size: 20px;
+  }
+
+  .uk-text-large {
+    font-size: 18px;
+  }
+
   .tm-text-average {
     font-size: 13px;
   }
@@ -540,5 +569,42 @@ footer {
 
   .tm-text-enormous {
     font-size: 28px;
+  }
+
+  .tm-pageheader, .tm-order {
+
+    .uk-button {
+      padding: 0 20px;
+      font-size: 14px;
+    }
+  }
+
+  .tm-scheme .tm-item {
+    padding-left: 50px;
+
+    &:before {
+      font-size: 60px;
+    }
+  }
+
+  .tm-text-bg {
+    line-height: 126px;
+    font-size: 100px;
+  }
+
+  .carousel {
+    height: 600px;
+  }
+
+  .tm-title {
+    font-size: 26px;
+  }
+
+  .tm-subtitle {
+    font-size: 18px;
+  }
+
+  .tm-button {
+    font-size: 18px;
   }
 }
