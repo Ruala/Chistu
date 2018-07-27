@@ -152,7 +152,13 @@ let getTime;
             }
 
             // Iterate through slides
-            this.$indicators = this.$el.find('.indicators').length ? this.$el.find('.indicators') : $('<ul class="indicators"></ul>');
+            let appendIndicator = false;
+            if (this.$el.find('.indicators').length) {
+                this.$indicators = this.$el.find('.indicators');
+            } else {
+                this.$indicators = $('<ul class="indicators"></ul>');
+                appendIndicator = true;
+            }
             this.$el.find('.carousel-item').each((i, el) => {
                 this.images.push(el);
                 if (this.showIndicators) {
@@ -166,7 +172,7 @@ let getTime;
                     this.$indicators.append($indicator);
                 }
             });
-            if (this.showIndicators) {
+            if (this.showIndicators && appendIndicator) {
                 this.$el.append(this.$indicators);
             }
             this.count = this.images.length;
