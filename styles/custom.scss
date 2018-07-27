@@ -490,6 +490,14 @@ footer {
     font-size: 20px;
   }
 
+  //.tm-text-big {
+  //  font-size: 17px;
+  //}
+  //
+  //.tm-text-huge {
+  //  font-size: 23px;
+  //}
+
   .tm-scheme > div:first-of-type {
      padding-bottom: 0;
   }
@@ -514,5 +522,23 @@ footer {
         }
       }
     }
+  }
+}
+
+@media (max-width: 639px) {
+  .tm-text-average {
+    font-size: 13px;
+  }
+
+  .tm-text-big {
+    font-size: 17px;
+  }
+
+  .tm-text-huge {
+    font-size: 23px;
+  }
+
+  .tm-text-enormous {
+    font-size: 28px;
   }
 }

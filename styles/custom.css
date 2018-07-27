@@ -627,5 +627,17 @@ footer {
     .tm-dotnav-step-2 > * > *::before {
       content: counter(step) "";
       counter-increment: step; } }
+@media (max-width: 639px) {
+  .tm-text-average {
+    font-size: 13px; }
+
+  .tm-text-big {
+    font-size: 17px; }
+
+  .tm-text-huge {
+    font-size: 23px; }
+
+  .tm-text-enormous {
+    font-size: 28px; } }
 
 /*# sourceMappingURL=custom.css.map */
