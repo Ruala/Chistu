@@ -394,3 +394,20 @@ header {
     }
   }
 }
+
+.tm-social {
+  font-size: 22px;
+
+  > * > a {
+    color: #d2d2d2;
+
+    &:hover, &:focus {
+      color: $primary-color;
+    }
+  }
+}
+
+footer {
+  font-family: $bold-font-family;
+  font-size: 18px;
+}

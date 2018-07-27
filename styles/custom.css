@@ -144,6 +144,12 @@
       .uk-dotnav > .uk-active > *::before {
         line-height: 40px; }
 
+.uk-logo {
+  max-width: 260px; }
+
+.uk-iconnav > * {
+  padding-left: 20px; }
+
 body {
   font-family: "ProximaNova-Light", sans-serif;
   font-size: 17px;
@@ -416,5 +422,16 @@ header {
   .tm-dotnav-step-2 > * > *::before {
     content: counter(step) "";
     counter-increment: step 2; }
+
+.tm-social {
+  font-size: 22px; }
+  .tm-social > * > a {
+    color: #d2d2d2; }
+    .tm-social > * > a:hover, .tm-social > * > a:focus {
+      color: #007dff; }
+
+footer {
+  font-family: "ProximaNova-Bold", sans-serif;
+  font-size: 18px; }
 
 /*# sourceMappingURL=custom.css.map */
