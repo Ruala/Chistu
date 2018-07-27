@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Title</title>
+    <title>ChistU</title>
 
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Химчистка мебели">
+    <meta name="keywords" content="химчистка, мебель">
 
-    <!--<link rel="shortcut icon" type="images/" href="/favicon.ico">-->
+    <link rel="shortcut icon" href="images/favicon.png">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
@@ -26,27 +26,29 @@
         <div>
 
             <div class="tm-pageheader tm-pageheader-main uk-section uk-position-relative uk-padding-remove uk-background-default">
-                <img class="uk-width-1-1 uk-position-top-center" src="images/bg-inner.png" alt="">
+                <img class="uk-position-top-left uk-visible@xl" src="images/bg-inner-left.png" alt="">
+                <img class="uk-position-top-right" src="images/bg-inner-right.png" alt="">
 
                 <div class="uk-child-width-1-1 uk-position-relative uk-flex uk-flex-wrap uk-flex-wrap-between uk-height-viewport">
                     <header>
                         <div class="uk-container uk-container-large">
                             <nav class="uk-navbar-container uk-navbar-transparent uk-padding-small uk-padding-remove-horizontal" uk-navbar>
-                                <div class="uk-navbar-left">
+                                <div class="uk-navbar-left uk-width-1-1 uk-width-auto@s">
                                     <a href="index.html" class="uk-navbar-item uk-logo"><img src="images/navbar_logo.png" alt=""></a>
                                 </div>
 
                                 <div class="uk-navbar-center">
-                                    <ul class="uk-navbar-nav">
+                                    <ul class="uk-navbar-nav uk-visible@l">
                                         <li><a href="services.html">Услуги</a></li>
                                         <li><a href="prices.html">Цены</a></li>
                                         <li><a href="about.html">О нас</a></li>
                                         <li><a href="contacts.html">Контакты и оплата</a></li>
                                     </ul>
+                                    <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-visible@s uk-hidden@l" uk-navbar-toggle-icon uk-toggle></a>
                                 </div>
 
                                 <div class="uk-navbar-right">
-                                    <div class="tm-font-bold">
+                                    <div class="tm-font-bold uk-visible@s">
                                         <div class="uk-flex uk-flex-middle">
                                             <img src="images/icon_phone.png" alt="" class="uk-margin-small-right">
                                             <div>8 800 777 66 55</div>
@@ -56,6 +58,7 @@
                                             <div class="uk-text-uppercase">круглосуточно</div>
                                         </div>
                                     </div>
+                                    <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle></a>
                                 </div>
                             </nav>
                         </div>
@@ -65,11 +68,9 @@
                         <div class="uk-container">
 
                             <h1 class="tm-spanize uk-margin"><span>О нас</span></h1>
-                            <div class="uk-grid-small uk-grid-match uk-child-width-1-2@m" uk-grid>
+                            <div class="uk-grid-small uk-child-width-1-2@m" uk-grid>
                                 <div>
-                                    <div class="tm-mh-400 uk-cover-container">
-                                        <img src="images/contacts_main.jpg" alt="" uk-cover>
-                                    </div>
+                                    <img src="images/contacts_main.jpg" alt="">
                                 </div>
                                 <div>
                                     <p class="tm-font-size-default">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
@@ -92,15 +93,15 @@
         <footer class="uk-section uk-section-small uk-position-relative uk-background-default">
             <img src="images/footer-decor.png" alt="" class="uk-position-bottom-left uk-visible@xl">
             <div class="uk-container uk-position-relative">
-                <div class="uk-child-width-1-3@s uk-flex-middle" uk-grid>
-                    <div>
-                        <div class="uk-child-width-expand uk-flex-middle" uk-grid>
+                <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-flex-middle" uk-grid>
+                    <div class="uk-width-1-1 uk-width-1-3@m uk-text-left@m">
+                        <div class="uk-child-width-expand@s uk-flex-middle" uk-grid>
                             <div>
                                 <a href="index.html" class="uk-logo"><img src="images/navbar_logo.png" alt=""></a>
                             </div>
 
                             <div>
-                                <ul class="tm-social uk-iconnav">
+                                <ul class="tm-social uk-iconnav uk-flex-center uk-flex-right@s uk-flex-left@m">
                                     <li><a href="#"><i class="fab fa-vk"></i></a></li>
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -109,9 +110,9 @@
                         </div>
                     </div>
 
-                    <div class="uk-text-center">
+                    <div class="uk-text-center uk-text-left@s uk-text-center@m">
                         <div class="tm-font-medium">Принимаем оплату:</div>
-                        <div class="uk-flex-middle uk-flex-center uk-grid-small" uk-grid>
+                        <div class="uk-flex-middle uk-flex-center uk-flex-left@s uk-flex-center@m uk-grid-small" uk-grid>
                             <div>
                                 <a href="#"><img src="images/footer_visa.png" alt=""></a>
                             </div>
@@ -121,8 +122,8 @@
                         </div>
                     </div>
 
-                    <div class="uk-text-right">
-                        <div class="uk-flex uk-flex-middle uk-flex-right">
+                    <div class="uk-text-center uk-text-right@s">
+                        <div class="uk-flex uk-flex-middle uk-flex-center uk-flex-right@s">
                             <img src="images/icon_phone.png" alt="" class="uk-margin-small-right">
                             <div>8 800 777 66 55</div>
                         </div>

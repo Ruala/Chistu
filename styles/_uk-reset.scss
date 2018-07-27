@@ -74,18 +74,20 @@
   font-size: 27px;
 }
 
-.uk-slidenav {
+.uk-slidenav, .carousel-prev, .carousel-next {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 85px;
   height: 82px;
   padding: 0;
+  font-size: 24px;
   color: #bbbab9;
   background-color: #f7f9fa;
+      font-weight: 900;
 }
 
-.uk-slidenav-next {
+.uk-slidenav-next, .carousel-next {
   color: #fff;
   background: linear-gradient(90deg, #007dff, #00a7ff);
 }

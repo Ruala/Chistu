@@ -179,6 +179,9 @@ $(document).ready(function () {
         const $caruosel = $('.carousel');
         const options = {
             indicators: true,
+            dist: -150,
+            shift: -100,
+            padding: -300,
         };
 
         $caruosel.carousel(options);
