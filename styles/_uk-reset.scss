@@ -1,5 +1,3 @@
-@import "variables";
-
 .uk-background-primary {
   background: $alt-gradient;
 }
@@ -113,12 +111,12 @@
 
       &::before {
         content: counter(item) '';
-        counter-increment: item 2;
+        counter-increment: item;
         line-height: 28px;
       }
     }
 
-    &:nth-last-child(2) {
+    &:last-of-type {
       position: relative;
       width: auto;
       padding-left: 12px;
@@ -158,6 +156,6 @@
       &::before {
         line-height: 40px;
       }
-  }
+    }
   }
 }

@@ -362,3 +362,35 @@ header {
   font-size: 146px;
   color: #e2e4e4;
 }
+
+.tm-dotnav-step-2 {
+  counter-reset: step;
+
+  > * {
+
+    &:nth-last-of-type(2) {
+       position: relative;
+      width: auto;
+      padding-left: 12px;
+
+      &::before {
+        content: '/';
+        position: absolute;
+        bottom: 0;
+        left: 2px;
+        font-family: $regular-font-family;
+        font-size: 28px;
+        color: #bbbab9;
+        line-height: 28px;
+      }
+    }
+
+    > * {
+
+      &::before {
+        content: counter(step) '';
+        counter-increment: step 2;
+      }
+    }
+  }
+}
