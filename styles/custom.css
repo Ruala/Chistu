@@ -577,6 +577,12 @@ footer {
   .tm-font-medium {
     font-size: 20px; }
 
+  .tm-text-big {
+    font-size: 17px; }
+
+  .tm-text-huge {
+    font-size: 23px; }
+
   .tm-scheme > div:first-of-type {
     padding-bottom: 0; }
 
