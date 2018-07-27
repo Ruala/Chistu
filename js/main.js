@@ -10,7 +10,6 @@ $(document).ready(function () {
         });
 
 
-
         $("#orderForm").validate({
             rules: {
                 name: "required",
@@ -127,4 +126,13 @@ $(document).ready(function () {
 
     })();
 
+    /*carousel init*/
+    (function () {
+        const $caruosel = $('.carousel');
+        const options = {
+            indicators: true,
+        };
+
+        $caruosel.carousel(options);
+    })();
 });
