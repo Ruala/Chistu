@@ -79,7 +79,10 @@ let getTime;
         fullWidth: false, // Change to full width styles
         indicators: false, // Toggle indicators
         noWrap: false, // Don't wrap around and cycle through items.
-        onCycleTo: null // Callback for when a new slide is cycled to.
+        onCycleTo: null, // Callback for when a new slide is cycled to.
+        getIndicators: null, // get custom indicators func
+        getNavPrev: null, //get custom prev button func
+        getNavNext: null, //get custom next button func
     };
 
     /**
@@ -117,6 +120,9 @@ let getTime;
              * @prop {Boolean} indicators
              * @prop {Boolean} noWrap
              * @prop {Function} onCycleTo
+             * @prop {Function} getIndicators
+             * @prop {Function} getNavPrev
+             * @prop {Function} getNavNext
              */
             this.options = $.extend({}, Carousel.defaults, options);
 
@@ -155,6 +161,8 @@ let getTime;
             let appendIndicator = false;
             if (this.$el.find('.indicators').length) {
                 this.$indicators = this.$el.find('.indicators');
+            } else if (typeof this.options.getIndicators === 'function') {
+                this.$indicators = this.options.getIndicators(this.$el);
             } else {
                 this.$indicators = $('<ul class="indicators"></ul>');
                 appendIndicator = true;
@@ -180,6 +188,14 @@ let getTime;
             // Get arrows
             this.$prev = this.$el.find('.carousel-prev');
             this.$next = this.$el.find('.carousel-next');
+
+            if (typeof this.options.getNavPrev === 'function') {
+                this.$prev = this.$prev.add(this.options.getNavPrev(this.$el));
+            }
+
+            if (typeof this.options.getNavNext === 'function') {
+                this.$next = this.$next.add(this.options.getNavNext(this.$el));
+            }
 
             // Cap numVisible at count
             this.options.numVisible = Math.min(this.count, this.options.numVisible);
@@ -231,8 +247,8 @@ let getTime;
             this._handleCarouselDragBound = this._handleCarouselDrag.bind(this);
             this._handleCarouselReleaseBound = this._handleCarouselRelease.bind(this);
             this._handleCarouselClickBound = this._handleCarouselClick.bind(this);
-            this._handleCarouselPrevBound = this._handleCarouselPrev.bind(this);
-            this._handleCarouselNextBound = this._handleCarouselNext.bind(this);
+            this._handleCarouselPrevBound = M.throttle(this._handleCarouselPrev, 200).bind(this);
+            this._handleCarouselNextBound = M.throttle(this._handleCarouselNext, 200).bind(this);
 
             if (typeof window.ontouchstart !== 'undefined') {
                 this.el.addEventListener('touchstart', this._handleCarouselTapBound);
