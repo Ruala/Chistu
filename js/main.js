@@ -175,7 +175,7 @@ $(document).ready(function () {
 
     /*carousel init*/
     (function () {
-        const $caruosel = $('#carousel-content');
+        const $caruosel = $('.carousel');
         const $carouselHeader = $('#carousel-header');
         const options = {
             indicators: true,
@@ -188,5 +188,6 @@ $(document).ready(function () {
         };
 
         $caruosel.carousel(options);
+        $carouselHeader.on('click', e => e.stopPropagation());
     })();
 });

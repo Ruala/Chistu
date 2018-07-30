@@ -306,11 +306,13 @@ let getTime;
 
         _handleCarouselPrev(e) {
           e.preventDefault();
+          e.stopPropagation();
           this.prev();
         }
 
         _handleCarouselNext(e) {
           e.preventDefault();
+          e.stopPropagation();
           this.next();
         }
 
