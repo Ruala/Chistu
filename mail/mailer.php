@@ -33,7 +33,7 @@
     require 'class.phpmailer.php';
 
     $mail = new PHPMailer();
-    $mail->AddAddress('333333y@gmail.com');      	                // кому - адрес, Имя (например, 'email@ rek9.ru','Денис Герасимов')
+    $mail->AddAddress('kawas888@yandex.ru');      	                // кому - адрес, Имя (например, 'email@ rek9.ru','Денис Герасимов')
     $mail->IsHTML(true);                        				// выставляем формат письма HTML 
     $mail->CharSet = "UTF-8";                   				// кодировка
 	$mail->From = "info@chistu.ru";					        	// email, с которого отправиться письмо
