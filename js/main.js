@@ -182,9 +182,6 @@ $(document).ready(function () {
             dist: -150,
             shift: -100,
             padding: -300,
-            getIndicators: () => $carouselHeader.find('.indicators'),
-            getNavPrev: () => $carouselHeader.find('.carousel-prev'),
-            getNavNext: () => $carouselHeader.find('.carousel-next'),
         };
 
         $caruosel.carousel(options);
