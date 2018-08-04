@@ -255,7 +255,7 @@ header {
     box-shadow: 0 0 22px 0 rgba(143, 149, 147, 0.13);
 
     &::after {
-      background-image: url("../img/faq_down.png");
+      background-image: url("../images/faq_down.png");
     }
   }
 
@@ -267,7 +267,7 @@ header {
       color: $default-color;
 
       &::after {
-        background-image: url("../img/faq_up.png");
+        background-image: url("../images/faq_up.png");
       }
     }
   }

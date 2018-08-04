@@ -724,13 +724,13 @@ header {
   padding: 15px;
   box-shadow: 0 0 22px 0 rgba(143, 149, 147, 0.13); }
   .tm-faq .uk-accordion-title::after {
-    background-image: url("../img/faq_down.png"); }
+    background-image: url("../images/faq_down.png"); }
 .tm-faq .uk-open .uk-accordion-title {
   background-color: #009cff;
   font-size: 24px;
   color: #ffffff; }
   .tm-faq .uk-open .uk-accordion-title::after {
-    background-image: url("../img/faq_up.png"); }
+    background-image: url("../images/faq_up.png"); }
 
 .tm-card-shadow {
   box-shadow: 0 7px 23.5px 0.5px rgba(205, 205, 223, 0.28); }
