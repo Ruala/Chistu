@@ -185,24 +185,6 @@ $(document).ready(function () {
         };
 
         $caruosel.carousel(options);
-        $carouselHeader.on('click', e => e.stopPropagation());
-    })();
-
-    /*viewport fix*/
-    (function () {
-        updateWidth();
-
-        $(window).on('resize', updateWidth);
-
-        function updateWidth(){
-            var viewport = document.querySelector("meta[name=viewport]");
-            var width = document.documentElement.clientWidth;
-            if (width > 1200) {
-                viewport.setAttribute('content', 'width=1200, initial-scale=0.67, maximum-scale=1.0');
-            }
-            else {
-                viewport.setAttribute('content', 'width=device-width, initial-scale=1');
-            }
-        } 
+        $carouselHeader.on('click', function(e){e.stopPropagation()});
     })();
 });
