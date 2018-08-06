@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800,900&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800,900&subset=cyrillic");
 .carousel {
   overflow: hidden;
   position: relative;
@@ -114,7 +114,8 @@
       color: #00a0ff;
       background-color: transparent; }
       .carousel .indicators > .active > *::before {
-        line-height: 40px; }
+        line-height: 40px;
+        font-weight: 900; }
 
 .uk-background-primary {
   background: linear-gradient(30deg, #0d5cae, #038fd9); }
@@ -238,7 +239,8 @@
       color: #00a0ff;
       background-color: transparent; }
       .uk-dotnav > .uk-active > *::before {
-        line-height: 40px; }
+        line-height: 40px;
+        font-weight: 900; }
 
 .uk-logo {
   max-width: 260px; }
@@ -368,7 +370,8 @@
       color: #00a0ff;
       background-color: transparent; }
       .carousel .indicators > .active > *::before {
-        line-height: 40px; }
+        line-height: 40px;
+        font-weight: 900; }
 
 .uk-background-primary {
   background: linear-gradient(30deg, #0d5cae, #038fd9); }
@@ -492,7 +495,8 @@
       color: #00a0ff;
       background-color: transparent; }
       .uk-dotnav > .uk-active > *::before {
-        line-height: 40px; }
+        line-height: 40px;
+        font-weight: 900; }
 
 .uk-logo {
   max-width: 260px; }
