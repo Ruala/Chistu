@@ -18,9 +18,9 @@
         $name = substr(htmlspecialchars(trim($_POST['name'])), 0, 100);
         $content .= '<b>Имя: </b>' . $name . '<br>';
     }
-    if(isset($_POST['email'])) {
+    if(isset($_POST['phone'])) {
         $phone = substr(htmlspecialchars(trim($_POST['email'])), 0, 100);
-        $content .= '<b>Почта: </b>' . $phone . '<br>';
+        $content .= '<b>Телефон: </b>' . $phone . '<br>';
     }
     if(isset($_POST['message'])) {
         $message = substr(htmlspecialchars(trim($_POST['message'])), 0, 100);
