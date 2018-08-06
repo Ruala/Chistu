@@ -185,6 +185,6 @@ $(document).ready(function () {
         };
 
         $caruosel.carousel(options);
-        $carouselHeader.on('click', e => e.stopPropagation());
+        $carouselHeader.on('click', function(e){e.stopPropagation()});
     })();
 });
