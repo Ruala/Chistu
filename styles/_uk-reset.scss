@@ -16,7 +16,7 @@
 
 .uk-button {
   border-radius: 500px;
-  font-family: $bold-font-family;
+  font-weight: 700;
 }
 
 .uk-button-primary {
@@ -46,7 +46,7 @@
     height: 43px;
     line-height: 43px;
     padding: 0 25px;
-    font-family: $bold-font-family;
+    font-weight: 700;
     font-size: 18px;
     color: $global-color;
     border: 1px solid transparent;
@@ -107,13 +107,14 @@
       border-radius: 0;
       text-indent: 0;
       border: none;
-      font-family: $regular-font-family;
+      font-weight: 400;
       font-size: 28px;
       color: #bbbab9;
 
       &::before {
         content: counter(item) '';
         counter-increment: item;
+        display: block;
         line-height: 28px;
       }
     }
@@ -128,7 +129,7 @@
         position: absolute;
         bottom: 0;
         left: 2px;
-        font-family: $regular-font-family;
+        font-weight: 400;
         font-size: 28px;
         color: #bbbab9;
         line-height: 28px;
@@ -150,7 +151,7 @@
     }
 
     > * {
-    font-family: $black-font-family;
+    font-weight: 900;
     font-size: 54px;
     color: #00a0ff;
     background-color: transparent;

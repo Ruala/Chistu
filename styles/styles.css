@@ -1,28 +1,5 @@
-@font-face {
-  font-family: 'ProximaNova-Light';
-  src: url("../fonts/Proxima-Nova-Light.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'ProximaNova-Regular';
-  src: url("../fonts/Proxima-Nova-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'ProximaNova-Bold';
-  src: url("../fonts/Proxima-Nova-Bold.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'ProximaNova-Black';
-  src: url("../fonts/Proxima-Nova-Black.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'ProximaNova-Extrabld';
-  src: url("../fonts/Proxima-Nova-Extrabold.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal; }
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 .carousel {
   overflow: hidden;
   position: relative;
@@ -98,7 +75,7 @@
       border-radius: 0;
       text-indent: 0;
       border: none;
-      font-family: "ProximaNova-Regular", sans-serif;
+      font-weight: 400;
       font-size: 28px;
       color: #bbbab9;
       box-sizing: border-box;
@@ -108,6 +85,7 @@
       .carousel .indicators > * > *::before {
         content: counter(item) "";
         counter-increment: item;
+        display: block;
         line-height: 28px; }
     .carousel .indicators > *:last-of-type {
       position: relative;
@@ -118,7 +96,7 @@
         position: absolute;
         bottom: 0;
         left: 2px;
-        font-family: "ProximaNova-Regular", sans-serif;
+        font-weight: 400;
         font-size: 28px;
         color: #bbbab9;
         line-height: 28px; }
@@ -131,7 +109,7 @@
     .carousel .indicators > .active::before {
       display: none; }
     .carousel .indicators > .active > * {
-      font-family: "ProximaNova-Black", sans-serif;
+      font-weight: 900;
       font-size: 54px;
       color: #00a0ff;
       background-color: transparent; }
@@ -152,7 +130,7 @@
 
 .uk-button {
   border-radius: 500px;
-  font-family: "ProximaNova-Bold", sans-serif; }
+  font-weight: 700; }
 
 .uk-button-primary {
   background: linear-gradient(#00a7ff, #007dff);
@@ -175,7 +153,7 @@
     height: 43px;
     line-height: 43px;
     padding: 0 25px;
-    font-family: "ProximaNova-Bold", sans-serif;
+    font-weight: 700;
     font-size: 18px;
     color: #5d5d5d;
     border: 1px solid transparent;
@@ -225,12 +203,13 @@
       border-radius: 0;
       text-indent: 0;
       border: none;
-      font-family: "ProximaNova-Regular", sans-serif;
+      font-weight: 400;
       font-size: 28px;
       color: #bbbab9; }
       .uk-dotnav > * > *::before {
         content: counter(item) "";
         counter-increment: item;
+        display: block;
         line-height: 28px; }
     .uk-dotnav > *:last-of-type {
       position: relative;
@@ -241,7 +220,7 @@
         position: absolute;
         bottom: 0;
         left: 2px;
-        font-family: "ProximaNova-Regular", sans-serif;
+        font-weight: 400;
         font-size: 28px;
         color: #bbbab9;
         line-height: 28px; }
@@ -254,7 +233,7 @@
     .uk-dotnav > .uk-active::before {
       display: none; }
     .uk-dotnav > .uk-active > * {
-      font-family: "ProximaNova-Black", sans-serif;
+      font-weight: 900;
       font-size: 54px;
       color: #00a0ff;
       background-color: transparent; }
@@ -275,31 +254,6 @@
 .uk-offcanvas-bar {
   background-color: #007dff; }
 
-@font-face {
-  font-family: 'ProximaNova-Light';
-  src: url("../fonts/Proxima-Nova-Light.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'ProximaNova-Regular';
-  src: url("../fonts/Proxima-Nova-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'ProximaNova-Bold';
-  src: url("../fonts/Proxima-Nova-Bold.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'ProximaNova-Black';
-  src: url("../fonts/Proxima-Nova-Black.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'ProximaNova-Extrabld';
-  src: url("../fonts/Proxima-Nova-Extrabold.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal; }
 .carousel {
   overflow: hidden;
   position: relative;
@@ -375,7 +329,7 @@
       border-radius: 0;
       text-indent: 0;
       border: none;
-      font-family: "ProximaNova-Regular", sans-serif;
+      font-weight: 400;
       font-size: 28px;
       color: #bbbab9;
       box-sizing: border-box;
@@ -385,6 +339,7 @@
       .carousel .indicators > * > *::before {
         content: counter(item) "";
         counter-increment: item;
+        display: block;
         line-height: 28px; }
     .carousel .indicators > *:last-of-type {
       position: relative;
@@ -395,7 +350,7 @@
         position: absolute;
         bottom: 0;
         left: 2px;
-        font-family: "ProximaNova-Regular", sans-serif;
+        font-weight: 400;
         font-size: 28px;
         color: #bbbab9;
         line-height: 28px; }
@@ -408,7 +363,7 @@
     .carousel .indicators > .active::before {
       display: none; }
     .carousel .indicators > .active > * {
-      font-family: "ProximaNova-Black", sans-serif;
+      font-weight: 900;
       font-size: 54px;
       color: #00a0ff;
       background-color: transparent; }
@@ -429,7 +384,7 @@
 
 .uk-button {
   border-radius: 500px;
-  font-family: "ProximaNova-Bold", sans-serif; }
+  font-weight: 700; }
 
 .uk-button-primary {
   background: linear-gradient(#00a7ff, #007dff);
@@ -452,7 +407,7 @@
     height: 43px;
     line-height: 43px;
     padding: 0 25px;
-    font-family: "ProximaNova-Bold", sans-serif;
+    font-weight: 700;
     font-size: 18px;
     color: #5d5d5d;
     border: 1px solid transparent;
@@ -502,12 +457,13 @@
       border-radius: 0;
       text-indent: 0;
       border: none;
-      font-family: "ProximaNova-Regular", sans-serif;
+      font-weight: 400;
       font-size: 28px;
       color: #bbbab9; }
       .uk-dotnav > * > *::before {
         content: counter(item) "";
         counter-increment: item;
+        display: block;
         line-height: 28px; }
     .uk-dotnav > *:last-of-type {
       position: relative;
@@ -518,7 +474,7 @@
         position: absolute;
         bottom: 0;
         left: 2px;
-        font-family: "ProximaNova-Regular", sans-serif;
+        font-weight: 400;
         font-size: 28px;
         color: #bbbab9;
         line-height: 28px; }
@@ -531,7 +487,7 @@
     .uk-dotnav > .uk-active::before {
       display: none; }
     .uk-dotnav > .uk-active > * {
-      font-family: "ProximaNova-Black", sans-serif;
+      font-weight: 900;
       font-size: 54px;
       color: #00a0ff;
       background-color: transparent; }
@@ -553,13 +509,14 @@
   background-color: #007dff; }
 
 body {
-  font-family: "ProximaNova-Light", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 17px;
+  font-weight: 300;
   color: #5d5d5d; }
 
 h1, h2, h3, .uk-h1 {
   line-height: 1;
-  font-family: "ProximaNova-Black", sans-serif;
+  font-weight: 900;
   color: #ffffff;
   margin: 0; }
 
@@ -577,7 +534,7 @@ h3 {
 
 h4, h5 {
   line-height: 1.2;
-  font-family: "ProximaNova-Regular", sans-serif;
+  font-weight: 400;
   color: #5d5d5d; }
 
 h4 {
@@ -655,16 +612,16 @@ header {
   background-color: rgba(0, 0, 0, 0.5); }
 
 .tm-font-regular {
-  font-family: "ProximaNova-Regular", sans-serif; }
+  font-weight: 400; }
 
 .tm-font-bold {
-  font-family: "ProximaNova-Bold", sans-serif; }
+  font-weight: 700; }
 
 .tm-font-extrabold {
-  font-family: "ProximaNova-Extrabld", sans-serif; }
+  font-weight: 800; }
 
 .tm-font-black {
-  font-family: "ProximaNova-Black", sans-serif; }
+  font-weight: 900; }
 
 .tm-font-color-primary {
   color: #007dff; }
@@ -713,7 +670,7 @@ header {
 .tm-variants ol li:before {
   content: counter(item) ". ";
   counter-increment: item;
-  font-family: "ProximaNova-Black", sans-serif;
+  font-weight: 900;
   font-size: 24px;
   color: #00a0ff;
   position: absolute;
@@ -722,7 +679,7 @@ header {
 
 .tm-faq .uk-accordion-title {
   background-color: #ffffff;
-  font-family: "ProximaNova-Bold", sans-serif;
+  font-weight: 700;
   font-size: 25px;
   color: #5d5d5d;
   padding: 15px;
@@ -752,14 +709,14 @@ header {
     padding-bottom: 72px; }
   .tm-scheme .tm-item {
     padding-left: 80px;
-    font-family: "ProximaNova-Regular", sans-serif;
+    font-weight: 400;
     font-size: 23px;
     color: #454545;
     position: relative; }
     .tm-scheme .tm-item:before {
       content: counter(item) "";
       counter-increment: item;
-      font-family: "ProximaNova-Bold", sans-serif;
+      font-weight: 700;
       font-size: 110px;
       color: #d6d8d9;
       position: absolute;
@@ -817,7 +774,7 @@ header {
       position: absolute;
       bottom: 0;
       left: 2px;
-      font-family: "ProximaNova-Regular", sans-serif;
+      font-weight: 400;
       font-size: 28px;
       color: #bbbab9;
       line-height: 28px; }
@@ -833,7 +790,7 @@ header {
       color: #007dff; }
 
 footer {
-  font-family: "ProximaNova-Bold", sans-serif;
+  font-weight: 700;
   font-size: 18px; }
 
 #btnUpDown {

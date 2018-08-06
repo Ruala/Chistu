@@ -6,12 +6,13 @@
 body {
   font-family: $global-font-family;
   font-size: $global-font-size;
+  font-weight: 300;
   color: $global-color;
 }
 
 h1, h2, h3, .uk-h1 {
   line-height: 1;
-  font-family: $black-font-family;
+  font-weight: 900;
   color: $default-color;
   margin: 0;
 }
@@ -34,7 +35,7 @@ h3 {
 
 h4,h5 {
   line-height: 1.2;
-  font-family: $regular-font-family;
+  font-weight: 400;
   color: $global-color;
 }
 
@@ -156,19 +157,19 @@ header {
 }
 
 .tm-font-regular {
-  font-family: $regular-font-family;
+  font-weight: 400;
 }
 
 .tm-font-bold {
-  font-family: $bold-font-family;
+  font-weight: 700;
 }
 
 .tm-font-extrabold {
-  font-family: $extrabold-font-family;
+  font-weight: 800;
 }
 
 .tm-font-black {
-  font-family: $black-font-family;
+  font-weight: 900;
 }
 
 .tm-font-color-primary {
@@ -234,7 +235,7 @@ header {
   ol li:before {
     content: counter(item) '. ';
     counter-increment: item;
-    font-family: $black-font-family;
+    font-weight: 900;
     font-size: 24px;
     color: #00a0ff;
     position: absolute;
@@ -247,7 +248,7 @@ header {
   .uk-accordion-title {
     background-color: $default-color;
 
-    font-family: $bold-font-family;
+    font-weight: 700;
     font-size: 25px;
     color: $global-color;
 
@@ -295,7 +296,7 @@ header {
 
   .tm-item {
     padding-left: 80px;
-    font-family: $regular-font-family;
+    font-weight: 400;
     font-size: 23px;
     color: #454545;
     position: relative;
@@ -303,7 +304,7 @@ header {
     &:before {
       content: counter(item) '';
       counter-increment: item;
-      font-family: $bold-font-family;
+      font-weight: 700;
       font-size: 110px;
       color: #d6d8d9;
       position: absolute;
@@ -379,7 +380,7 @@ header {
         position: absolute;
         bottom: 0;
         left: 2px;
-        font-family: $regular-font-family;
+        font-weight: 400;
         font-size: 28px;
         color: #bbbab9;
         line-height: 28px;
@@ -409,7 +410,7 @@ header {
 }
 
 footer {
-  font-family: $bold-font-family;
+  font-weight: 700;
   font-size: 18px;
 }
 
