@@ -568,6 +568,7 @@ var getTime = void 0;
                 return e.clientY;
             }
 
+
             /**
              * Wrap index
              * @param {Number} x

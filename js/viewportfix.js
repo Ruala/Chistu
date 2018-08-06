@@ -17,7 +17,7 @@
         else {
             body.style.zoom = '';
         }
-    } 
+    }
 
     function getIEVersion() {
         var sAgent = window.navigator.userAgent;
