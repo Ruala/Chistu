@@ -263,6 +263,8 @@
 
 .uk-logo {
   max-width: 260px; }
+  .uk-logo img {
+    width: 100%; }
 
 .uk-iconnav > * {
   padding-left: 20px; }
@@ -538,6 +540,8 @@
 
 .uk-logo {
   max-width: 260px; }
+  .uk-logo img {
+    width: 100%; }
 
 .uk-iconnav > * {
   padding-left: 20px; }
