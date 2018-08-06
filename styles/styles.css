@@ -117,6 +117,9 @@
         line-height: 40px;
         font-weight: 900; }
 
+h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
+  font-family: "Montserrat", sans-serif; }
+
 .uk-background-primary {
   background: linear-gradient(30deg, #0d5cae, #038fd9); }
 
@@ -372,6 +375,9 @@
       .carousel .indicators > .active > *::before {
         line-height: 40px;
         font-weight: 900; }
+
+h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
+  font-family: "Montserrat", sans-serif; }
 
 .uk-background-primary {
   background: linear-gradient(30deg, #0d5cae, #038fd9); }
