@@ -159,7 +159,7 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
     padding: 0 25px;
     font-weight: 700;
     font-size: 18px;
-    color: #5d5d5d;
+    color: #221f1f;
     border: 1px solid transparent;
     border-radius: 500px;
     transition-property: all; }
@@ -418,7 +418,7 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
     padding: 0 25px;
     font-weight: 700;
     font-size: 18px;
-    color: #5d5d5d;
+    color: #221f1f;
     border: 1px solid transparent;
     border-radius: 500px;
     transition-property: all; }
@@ -522,7 +522,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
   font-weight: 300;
-  color: #5d5d5d; }
+  color: #221f1f; }
 
 h1, h2, h3, .uk-h1 {
   line-height: 1;
@@ -545,7 +545,7 @@ h3 {
 h4, h5 {
   line-height: 1.2;
   font-weight: 400;
-  color: #5d5d5d; }
+  color: #221f1f; }
 
 h4 {
   font-size: 40px; }
@@ -672,7 +672,7 @@ header {
 .tm-variants ol li {
   margin-bottom: 10px;
   font-size: 18px;
-  color: #5d5d5d;
+  color: #221f1f;
   margin-left: 10px;
   position: relative;
   text-align: left;
@@ -691,7 +691,7 @@ header {
   background-color: #ffffff;
   font-weight: 700;
   font-size: 25px;
-  color: #5d5d5d;
+  color: #221f1f;
   padding: 15px;
   box-shadow: 0 0 22px 0 rgba(143, 149, 147, 0.13); }
   .tm-faq .uk-accordion-title::after {
