@@ -431,8 +431,10 @@
                                         отличную работу, подпитывает доверие к нашей гарантии результата.</p>
                                 </div>
                             </div>
-                            <div class="uk-width-auto@m">
-                                <img src="images/warranty.png" alt="" class="tm-box-shadow">
+                            <div class="uk-width-auto@m" uk-lightbox>
+                                <a href="images/warranty.png">
+                                    <img src="images/warranty.png" alt="" class="tm-box-shadow">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1035,19 +1037,13 @@
             </div>
 
 
-            <div class="uk-section uk-padding-remove">
-                <div class="uk-container">
-                    <!--Карта-->
-                    <div class="uk-text-center">
-                        <iframe
-                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A7d89e86b18a2cbac0e2599ff582b170309bfdf69b4bd14a3985de994f2c05237&amp;source=constructor"
-                                width="100%"
-                                height="600"
-                                frameborder="0">
-                        </iframe>
-                    </div>
-
-                </div>
+            <div id="map" class="map">
+                <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A7d89e86b18a2cbac0e2599ff582b170309bfdf69b4bd14a3985de994f2c05237&amp;source=constructor"
+                        width="100%"
+                        height="600"
+                        frameborder="0">
+                </iframe>
             </div>
         </div>
 
@@ -1244,6 +1240,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+<script src="js/utm-check.min.js"></script>
 <script src="js/carousel.min.js"></script>
 <script src="js/main.min.js"></script>
 

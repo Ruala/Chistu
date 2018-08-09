@@ -1,4 +1,32 @@
 <?php
+
+$content = '';
+/* Ловим УТМ метки */
+if (isset($_COOKIE['utmCampaign'])) {
+    $content .= '<br><br><p>UTM</p>
+        utmCampaign:'.$_COOKIE['utmCampaign'].'<br>
+        utmSource:'.$_COOKIE['utmSource'].'<br>
+        utmMedium:'.$_COOKIE['utmMedium'].'<br>
+        utmTerm:'.$_COOKIE['utmTerm'].'<br>
+        utmContent:'.$_COOKIE['utmContent'].'<br><br>
+        pmSource:'.$_COOKIE['pmSource'].'<br>
+        pmBlock:'.$_COOKIE['pmBlock'].'<br>
+        pmPosition:'.$_COOKIE['pmPosition'].'<br>
+    ';
+}
+
+/* Ловим Регион */
+if (isset($_COOKIE['y_region'])) {
+    $content .= '<br><br><p>Region</p>
+        Страна:'.$_COOKIE['y_country'].'<br>
+        Регион:'.$_COOKIE['y_region'].'<br>
+        Город:'.$_COOKIE['y_city'].'<br>
+    ';
+}
+
+/*IP*/
+$content .= '<br><br><p>IP: '.$_SERVER['REMOTE_ADDR'].'</p>';
+
 /*
 * Денис Герасимов http://rek9.ru/
 * Данный скрипт обрабатывает форм и отправляет ее на email
@@ -11,7 +39,6 @@
 * 5. URL, на который будет переадресация, при успешной отправке формы (45 строчка)
 */
     $subject = 'Почта пришла!!!';                      // тема письма , вместо многоточия вставьте ваш домен
-    $content = '';
     $content .= '<hr>';
 
     if(isset($_POST['name'])) {
