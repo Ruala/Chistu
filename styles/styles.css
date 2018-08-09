@@ -142,6 +142,8 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
   font-size: 22px;
   color: #ffffff;
   letter-spacing: 3.5px; }
+  .uk-button-primary:hover, .uk-button-primary:focus {
+    background: linear-gradient(#33b9ff, #3397ff); }
   .uk-button-primary.tm-button-big {
     height: 93px;
     line-height: 93px;
@@ -401,6 +403,8 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
   font-size: 22px;
   color: #ffffff;
   letter-spacing: 3.5px; }
+  .uk-button-primary:hover, .uk-button-primary:focus {
+    background: linear-gradient(#33b9ff, #3397ff); }
   .uk-button-primary.tm-button-big {
     height: 93px;
     line-height: 93px;
@@ -537,7 +541,7 @@ h1, .uk-h1 {
   font-size: 76px; }
 
 h2 {
-  font-size: 60px; }
+  font-size: 56px; }
 
 h3 {
   font-size: 41px; }
@@ -563,7 +567,7 @@ header {
   font-size: 54px; }
 
 .tm-h3 {
-  font-size: 39px; }
+  font-size: 37px; }
 
 .tm-h3-primary {
   padding: 20px 0; }

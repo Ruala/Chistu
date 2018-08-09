@@ -29,6 +29,10 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
   color: $default-color;
   letter-spacing: 3.5px;
 
+  &:hover, &:focus {
+    background: $primary-gradient-light;
+  }
+
   &.tm-button-big {
     height: 93px;
     line-height: 93px;

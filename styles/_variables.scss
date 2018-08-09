@@ -13,6 +13,7 @@ $default-color: #ffffff;
 $danger-color: #ec444a;
 
 $primary-gradient: linear-gradient(#00a7ff, #007dff);
+$primary-gradient-light: linear-gradient(lighten(#00a7ff, 10%), lighten(#007dff, 10%));
 $alt-gradient: linear-gradient(30deg, #0d5cae, #038fd9);
 $secondary-gradient: linear-gradient(60deg, #0d5cae, #038fd9);
 
