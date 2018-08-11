@@ -190,7 +190,10 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
   font-size: 24px;
   color: #bbbab9;
   background-color: #f7f9fa;
-  font-weight: 900; }
+  cursor: pointer; }
+  .uk-slidenav:hover, .uk-slidenav:focus, .carousel-prev:hover, .carousel-prev:focus, .carousel-next:hover, .carousel-next:focus {
+    color: rgba(102, 102, 102, 0.9);
+    text-decoration: none; }
 
 .uk-slidenav-next, .carousel-next {
   color: #fff;
@@ -451,7 +454,10 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
   font-size: 24px;
   color: #bbbab9;
   background-color: #f7f9fa;
-  font-weight: 900; }
+  cursor: pointer; }
+  .uk-slidenav:hover, .uk-slidenav:focus, .carousel-prev:hover, .carousel-prev:focus, .carousel-next:hover, .carousel-next:focus {
+    color: rgba(102, 102, 102, 0.9);
+    text-decoration: none; }
 
 .uk-slidenav-next, .carousel-next {
   color: #fff;
