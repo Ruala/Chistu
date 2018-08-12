@@ -46,8 +46,12 @@ $content .= '<br><br><p>IP: '.$_SERVER['REMOTE_ADDR'].'</p>';
         $content .= '<b>Имя: </b>' . $name . '<br>';
     }
     if(isset($_POST['phone'])) {
-        $phone = substr(htmlspecialchars(trim($_POST['email'])), 0, 100);
+        $phone = substr(htmlspecialchars(trim($_POST['phone'])), 0, 100);
         $content .= '<b>Телефон: </b>' . $phone . '<br>';
+    }
+    if(isset($_POST['email'])) {
+        $mail = substr(htmlspecialchars(trim($_POST['email'])), 0, 100);
+        $content .= '<b>Почта: </b>' . $mail . '<br>';
     }
     if(isset($_POST['message'])) {
         $message = substr(htmlspecialchars(trim($_POST['message'])), 0, 100);
@@ -60,7 +64,7 @@ $content .= '<br><br><p>IP: '.$_SERVER['REMOTE_ADDR'].'</p>';
     require 'class.phpmailer.php';
 
     $mail = new PHPMailer();
-    $mail->AddAddress('kawas888@yandex.ru');      	                // кому - адрес, Имя (например, 'email@ rek9.ru','Денис Герасимов')
+    $mail->AddAddress('333333y@gmail.com');      	// kawas888@yandex.ru                // кому - адрес, Имя (например, 'email@ rek9.ru','Денис Герасимов')
     $mail->IsHTML(true);                        				// выставляем формат письма HTML 
     $mail->CharSet = "UTF-8";                   				// кодировка
 	$mail->From = "info@chistu.ru";					        	// email, с которого отправиться письмо

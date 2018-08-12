@@ -2,105 +2,41 @@ $(document).ready(function () {
 
     //Валидатор
     (function () {
-
         $.validator.setDefaults({
             submitHandler: function (form) {
                 $(form).ajaxSubmit();
             }
         });
 
-        $("#orderForm").validate({
-            rules: {
-                name: "required",
-                phone: {
-                    required: true,
-                    minlength: 7
-                }
-            },
-            messages: {
-                name: "Пожалуйста, введите своё имя",
-                phone: {
-                    required: "Пожалуйста, введите свой номер телефона",
-                    minlength: "Ваш номер телефона слишком короткий"
-                }
-            },
-            errorElement: "em",
-            errorPlacement: function (error, element) {
-                // Add the `help-block` class to the error element
-                error.addClass("help-block");
-
-                if (element.prop("type") === "checkbox") {
-                    error.insertAfter(element.parent("label"));
-                } else {
-                    error.insertAfter(element);
-                }
-            },
-            highlight: function (element, errorClass, validClass) {
-                $(element).parents(".tm-highlight").addClass("has-error").removeClass("has-success");
-            },
-            unhighlight: function (element, errorClass, validClass) {
-                $(element).parents(".tm-highlight").addClass("has-success").removeClass("has-error");
-            }
+        $.validator.addMethod('phoneRus', function(value) {
+            return value.match(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/gi);
         });
 
-        $("#variantsForm").validate({
+        const $orderForm = $('#orderForm');
+        const $variantsForm = $('#variantsForm');
+        const $questionForm = $('#questionForm');
+        const options = {
             rules: {
                 name: "required",
                 phone: {
                     required: true,
-                    minlength: 7
-                },
-                email: {
-                    required: false,
-                    email: true
-                }
-            },
-            messages: {
-                name: "Пожалуйста, введите своё имя",
-                phone: {
-                    required: "Пожалуйста, введите свой номер телефона",
-                    minlength: "Ваш номер телефона слишком короткий"
-                }
-            },
-            errorElement: "em",
-            errorPlacement: function (error, element) {
-                // Add the `help-block` class to the error element
-                error.addClass("help-block");
-
-                if (element.prop("type") === "checkbox") {
-                    error.insertAfter(element.parent("label"));
-                } else {
-                    error.insertAfter(element);
-                }
-            },
-            highlight: function (element, errorClass, validClass) {
-                $(element).parents(".tm-highlight").addClass("has-error").removeClass("has-success");
-            },
-            unhighlight: function (element, errorClass, validClass) {
-                $(element).parents(".tm-highlight").addClass("has-success").removeClass("has-error");
-            }
-        });
-
-        $("#questionForm").validate({
-            rules: {
-                name: "required",
-                phone: {
-                    required: true,
-                    minlength: 7
-                },
+                    phoneRus: true                },
                 email: {
                     required: false,
                     email: true
                 },
                 message: {
-                    required: true,
+                    required: true
                 }
             },
             messages: {
                 name: "Пожалуйста, введите своё имя",
                 phone: {
                     required: "Пожалуйста, введите свой номер телефона",
-                    minlength: "Ваш номер телефона слишком короткий"
+                    phoneRus: "Пожалуйста, введите корректный номер телефона"
+                },
+                email: {
+                    email: "Пожалуйста, введите корректный почтовый адрес"
                 },
                 message: "Пожалуйста, введите вопрос."
             },
@@ -121,8 +57,11 @@ $(document).ready(function () {
             unhighlight: function (element, errorClass, validClass) {
                 $(element).parents(".tm-highlight").addClass("has-success").removeClass("has-error");
             }
-        });
+        };
 
+        $orderForm.validate(options);
+        $variantsForm.validate(options);
+        $questionForm.validate(options);
     })();
 
     //Up-Down Button
