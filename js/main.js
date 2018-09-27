@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    //Валидатор
+    //Validator
     (function () {
         $.validator.setDefaults({
             submitHandler: function (form) {
@@ -116,6 +116,7 @@ $(document).ready(function () {
     (function () {
         const $caruosel = $('.carousel');
         const $carouselHeader = $('#carousel-header');
+        const $carouselItem = $('.carousel-item');
         const options = {
             indicators: true,
             dist: -150,
@@ -123,7 +124,8 @@ $(document).ready(function () {
             padding: -300,
         };
 
-        $caruosel.carousel(options);
+        $carouselItem.on('click', function(e){e.preventDefault()});
         $carouselHeader.on('click', function(e){e.stopPropagation()});
+        $caruosel.carousel(options);
     })();
 });
